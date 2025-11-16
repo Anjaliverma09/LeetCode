@@ -1,0 +1,6 @@
+{
+  "1-Two-Sum.cpp": ["array", "hash-table"],
+  "2-Add-Two-Numbers.cpp": ["linked-list", "math"],
+  "21-Merge-Two-Sorted-Lists.cpp": ["linked-list", "recursion"],
+  "42-Trapping-Rain-Water.cpp": ["two-pointers", "stack"]
+}

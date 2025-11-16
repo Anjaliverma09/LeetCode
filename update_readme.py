@@ -1,88 +1,89 @@
 import os
+import json
 from datetime import datetime
 
-# Detect files inside each folder
-def get_problems(folder):
-    problems = []
+# Paths
+README_PATH = "README.md"
+TOPICS_FILE = "topics.json"
+BASE_FOLDERS = ["Easy", "Medium", "Hard"]
+
+# Load topics mapping
+if os.path.exists(TOPICS_FILE):
+    with open(TOPICS_FILE, "r", encoding="utf-8") as f:
+        topics_map = json.load(f)
+else:
+    topics_map = {}
+
+def count_files(folder):
     if not os.path.exists(folder):
-        return problems
+        return 0
+    return len([f for f in os.listdir(folder) if os.path.isfile(os.path.join(folder, f))])
 
-    for file in sorted(os.listdir(folder)):
-        if file.endswith(".cpp") or file.endswith(".py") or file.endswith(".java"):
-            name = os.path.splitext(file)[0]  
+def slug_from_filename(filename):
+    # Assuming filename like "1-Two-Sum.cpp"
+    parts = filename.split("-", 1)
+    if len(parts) != 2:
+        return None
+    num, rest = parts
+    slug = rest.replace(".cpp", "").replace(" ", "-").lower()
+    return slug
 
-            # Expected filename: "217-ContainsDuplicate"
-            if "-" in name:
-                num, title = name.split("-", 1)
-            else:
-                num = ""
-                title = name
-
-            title_clean = title.replace("_", " ")
-            solution_link = f"./{folder}/{file}"
-            problems.append((num, title_clean, solution_link))
-
-    return problems
-
-
-def generate_table(folder, difficulty):
-    problems = get_problems(folder)
-
-    table = f"### {difficulty}\n\n"
-    table += "| # | Problem | Solution | Topics | Difficulty |\n"
-    table += "|---|---------|----------|--------|------------|\n"
-
-    for num, title, link in problems:
-        table += f"| {num} | {title} | [C++]({link}) |  | {difficulty} |\n"
-
+def generate_table(folder):
+    if not os.path.exists(folder):
+        return ""
+    files = sorted(os.listdir(folder))
+    table = f"### {folder} Problems ({len(files)})\n\n"
+    table += "| # | Problem | Topics | Link |\n"
+    table += "|---|---------|--------|------|\n"
+    for f in files:
+        name = os.path.splitext(f)[0]  # e.g. "1-Two-Sum"
+        num = name.split("-")[0]
+        slug = slug_from_filename(f)
+        topics = topics_map.get(f, [])
+        topics_str = ", ".join(topics) if topics else "-"
+        if slug:
+            link = f"https://leetcode.com/problems/{slug}/"
+        else:
+            link = "-"
+        table += f"| {num} | {name} | {topics_str} | [Link]({link}) |\n"
     table += "\n"
     return table
 
+def generate_readme():
+    easy_count = count_files("Easy")
+    medium_count = count_files("Medium")
+    hard_count = count_files("Hard")
+    total = easy_count + medium_count + hard_count
 
-# Count problems
-easy = len(get_problems("Easy"))
-medium = len(get_problems("Medium"))
-hard = len(get_problems("Hard"))
-total = easy + medium + hard
+    easy_table = generate_table("Easy")
+    medium_table = generate_table("Medium")
+    hard_table = generate_table("Hard")
 
-# Shields-style badges
-progress_section = f"""
-## 📊 Progress
+    last_update = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-![Solved](https://img.shields.io/badge/Solved-{total}-blue)
-![Easy](https://img.shields.io/badge/Easy-{easy}-green)
-![Medium](https://img.shields.io/badge/Medium-{medium}-orange)
-![Hard](https://img.shields.io/badge/Hard-{hard}-red)
-"""
+    content = f"""# LeetCode Solutions
 
-# Generate problems section
-problems_section = f"""
-## 📝 Problems
-
-{generate_table("Easy", "Easy")}
-{generate_table("Medium", "Medium")}
-{generate_table("Hard", "Hard")}
-"""
-
-# Final README content
-readme = f"""# LeetCode Solutions
-
-Automatically generated using Python.
-
-{progress_section}
+**Total Problems Solved**: {total}  
+- Easy: {easy_count}  
+- Medium: {medium_count}  
+- Hard: {hard_count}  
 
 ---
 
-{problems_section}
+{easy_table}
+
+{medium_table}
+
+{hard_table}
 
 ---
 
-### ⏱ Last Updated
-{datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+_Last Updated: {last_update}_  
 """
 
-# Write README.md
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(readme)
+    with open(README_PATH, "w", encoding="utf-8") as f:
+        f.write(content)
 
-print("README updated successfully!")
+if __name__ == "__main__":
+    generate_readme()
+    print("README updated with topics!")
