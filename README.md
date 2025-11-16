@@ -1,16 +1,51 @@
-# LeetCode Solutions 🧠
-Automatically updated whenever new problems are added.
 
-## 📘 Problems Table
+# LeetCode Solutions
 
-| # | Problem | Solution | Difficulty |
-|---|---------|----------|------------|
-| 84 | [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [C++](./Hard/84-LargestRectangleInHistogram.cpp) | Hard |
-| 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [C++](./Medium/142-LinkedListCycleII.cpp) | Medium |
-| 202 | [Happy Number](https://leetcode.com/problems/happy-number/) | [C++](./Easy/202-HappyNumber.cpp) | Easy |
-| 456 | [132Pattern](https://leetcode.com/problems/132pattern/) | [C++](./Medium/456-132Pattern.cpp) | Medium |
-| 496 | [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) | [C++](./Easy/496-NextGreaterElementI.cpp) | Easy |
-| 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | [C++](./Medium/739-DailyTemperatures.cpp) | Medium |
-| 876 | [Middle Of The Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) | [C++](./Easy/876-MiddleOfTheLinkedList.cpp) | Easy |
-| 901 | [Online Stock Span](https://leetcode.com/problems/online-stock-span/) | [C++](./Medium/901-OnlineStockSpan.cpp) | Medium |
-| 1944 | [Number Of Visible People In AQueue](https://leetcode.com/problems/number-of-visible-people-in-aqueue/) | [C++](./Hard/1944-NumberOfVisiblePeopleInAQueue.cpp) | Hard |
+Updated automatically using Python script.
+
+## Summary
+- **Total Problems Solved:** 13
+- **Easy:** 5
+- **Medium:** 5
+- **Hard:** 3
+
+---
+
+## 📁 Problem Tables
+
+### Easy Problems
+
+| Problem | Link |
+|--------|------|
+| 160-IntersectionOfTwoLinkedLists | ./Easy/160-IntersectionOfTwoLinkedLists.cpp |
+| 202-HappyNumber | ./Easy/202-HappyNumber.cpp |
+| 496-NextGreaterElementI | ./Easy/496-NextGreaterElementI.cpp |
+| 876-MiddleOfTheLinkedList | ./Easy/876-MiddleOfTheLinkedList.cpp |
+| Two_Sum | ./Easy/Two_Sum.cpp |
+
+
+### Medium Problems
+
+| Problem | Link |
+|--------|------|
+| 142-LinkedListCycleII | ./Medium/142-LinkedListCycleII.cpp |
+| 456-132Pattern | ./Medium/456-132Pattern.cpp |
+| 739-DailyTemperatures | ./Medium/739-DailyTemperatures.cpp |
+| 901-OnlineStockSpan | ./Medium/901-OnlineStockSpan.cpp |
+| Find_anagram | ./Medium/Find_anagram.cpp |
+
+
+### Hard Problems
+
+| Problem | Link |
+|--------|------|
+| 1944-NumberOfVisiblePeopleInAQueue | ./Hard/1944-NumberOfVisiblePeopleInAQueue.cpp |
+| 84-LargestRectangleInHistogram | ./Hard/84-LargestRectangleInHistogram.cpp |
+| Trapping_Rain_Water | ./Hard/Trapping_Rain_Water.cpp |
+
+
+
+---
+
+### ⏱ Last Updated
+2025-11-16 19:55:49
