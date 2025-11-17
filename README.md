@@ -20,11 +20,11 @@ Automatically generated using Python.
 
 | # | Problem | Solution | Topics | Difficulty |
 |---|---------|----------|--------|------------|
+| 1 | TwoSum | [C++](./Easy/1-TwoSum.cpp) |  | Easy |
 | 160 | IntersectionOfTwoLinkedLists | [C++](./Easy/160-IntersectionOfTwoLinkedLists.cpp) |  | Easy |
 | 202 | HappyNumber | [C++](./Easy/202-HappyNumber.cpp) |  | Easy |
 | 496 | NextGreaterElementI | [C++](./Easy/496-NextGreaterElementI.cpp) |  | Easy |
 | 876 | MiddleOfTheLinkedList | [C++](./Easy/876-MiddleOfTheLinkedList.cpp) |  | Easy |
-|  | Two Sum | [C++](./Easy/Two_Sum.cpp) |  | Easy |
 
 
 ### Medium
@@ -32,11 +32,11 @@ Automatically generated using Python.
 | # | Problem | Solution | Topics | Difficulty |
 |---|---------|----------|--------|------------|
 | 142 | LinkedListCycleII | [C++](./Medium/142-LinkedListCycleII.cpp) |  | Medium |
+| 438 | FindAnagramInAString | [C++](./Medium/438-FindAnagramInAString.cpp) |  | Medium |
 | 456 | 132Pattern | [C++](./Medium/456-132Pattern.cpp) |  | Medium |
 | 739 | DailyTemperatures | [C++](./Medium/739-DailyTemperatures.cpp) |  | Medium |
 | 707 | Design Linked List | [C++](./Medium/901-DesignLinkedList.cpp) |  | Medium |
 | 901 | OnlineStockSpan | [C++](./Medium/901-OnlineStockSpan.cpp) |  | Medium |
-|  | Find anagram | [C++](./Medium/Find_anagram.cpp) |  | Medium |
 
 
 ### Hard
@@ -44,8 +44,8 @@ Automatically generated using Python.
 | # | Problem | Solution | Topics | Difficulty |
 |---|---------|----------|--------|------------|
 | 1944 | NumberOfVisiblePeopleInAQueue | [C++](./Hard/1944-NumberOfVisiblePeopleInAQueue.cpp) |  | Hard |
+| 42 | TrappingRainWater | [C++](./Hard/42-TrappingRainWater.cpp) |  | Hard |
 | 84 | LargestRectangleInHistogram | [C++](./Hard/84-LargestRectangleInHistogram.cpp) |  | Hard |
-|  | Trapping Rain Water | [C++](./Hard/Trapping_Rain_Water.cpp) |  | Hard |
 
 
 
@@ -53,4 +53,4 @@ Automatically generated using Python.
 ---
 
 ### ⏱ Last Updated
-2025-11-16 20:00:48
+2025-11-16 21:36:45
