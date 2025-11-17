@@ -1,9 +1,9 @@
 # LeetCode Solutions
 
-My LeetCode Solution using C++ language.
+Automatically generated using Python.
 
-## 📊 My LeetCode Progress
-![Metrics](./metrics.svg)
+
+## 📊 Progress
 
 ![Solved](https://img.shields.io/badge/Solved-13-blue)
 ![Easy](https://img.shields.io/badge/Easy-5-green)
