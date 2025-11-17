@@ -34,6 +34,7 @@ Automatically generated using Python.
 | 142 | LinkedListCycleII | [C++](./Medium/142-LinkedListCycleII.cpp) |  | Medium |
 | 456 | 132Pattern | [C++](./Medium/456-132Pattern.cpp) |  | Medium |
 | 739 | DailyTemperatures | [C++](./Medium/739-DailyTemperatures.cpp) |  | Medium |
+| 707 | Design Linked List | [C++](./Medium/901-DesignLinkedList.cpp) |  | Medium |
 | 901 | OnlineStockSpan | [C++](./Medium/901-OnlineStockSpan.cpp) |  | Medium |
 |  | Find anagram | [C++](./Medium/Find_anagram.cpp) |  | Medium |
 
