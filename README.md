@@ -8,7 +8,7 @@ LeetCode efficient solutions using C++ language.
 
  - [LeetCode](https://leetcode.com/u/anjali_verma09)
  - [GitHub](https://github.com/Anjaliverma09/LeetCode)
- - [LinkedIn](www.linkedin.com/in/anjali-verma09)
+ - [LinkedIn](https://www.linkedin.com/in/anjali-verma09/)
 
 
 ## 🛠 Tools & Platforms
