@@ -10,8 +10,6 @@ LeetCode efficient solutions using C++ language.
 | Medium 🟡  | **20** |
 | Hard 🔴    | **4**  |
 
-*(Update the numbers above when you track your solved questions.)*
-
 ## Contact Info
 
 * [LeetCode](https://leetcode.com/u/anjali_verma09)
