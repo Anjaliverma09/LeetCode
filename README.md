@@ -5,6 +5,7 @@ LeetCode efficient solutions using C++ language.
 ## 📊 LeetCode Progress Graph
 
 ```mermaid
+%%{init: { 'themeVariables': { 'pie1': '#90EE90', 'pie2': '#FFD700', 'pie3': '#FF4C4C' }}}%%
 pie showData
     "Easy" : 8
     "Medium" : 20
