@@ -5,12 +5,13 @@ LeetCode efficient solutions using C++ language.
 ## 📊 LeetCode Progress Graph
 
 ```mermaid
-donut title LeetCode Questions Solved
+pie showData
     "Easy" : 8
-    "Medium" : 0
-    "Hard" : 0
+    "Medium" : 20
+    "Hard" : 4
 ```
 
+*(Update the numbers above when you track your solved questions.)*
 
 ## Contact Info
 
