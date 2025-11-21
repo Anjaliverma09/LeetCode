@@ -6,12 +6,11 @@ LeetCode efficient solutions using C++ language.
 
 ```mermaid
 donut title LeetCode Questions Solved
-    "Easy" : 0
+    "Easy" : 8
     "Medium" : 0
     "Hard" : 0
 ```
 
-*(Update the numbers above when you track your solved questions.)*
 
 ## Contact Info
 
