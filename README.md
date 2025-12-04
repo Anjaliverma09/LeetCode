@@ -6,7 +6,7 @@ LeetCode efficient solutions using C++ language.
 
 🍏 Easy 8 • 🟡 Medium 20 • 🔴 Hard 4
 
-## Contact Info
+## 📬 Contact Info 
 
 * [LeetCode](https://leetcode.com/u/anjali_verma09)
 * [GitHub](https://github.com/Anjaliverma09/)
