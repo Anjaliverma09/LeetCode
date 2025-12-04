@@ -2,9 +2,16 @@
 
 LeetCode efficient solutions using C++ language.
 
-## 📊 LeetCode Progress Graph
+## 📊 LeetCode Stats
 
-🍏 Easy 8 • 🟡 Medium 20 • 🔴 Hard 4
+🔥 **70+ Problems Solved**
+
+🍏 **Easy:** 29  
+🟡 **Medium:** 38  
+🔴 **Hard:** 4  
+
+📈 *Consistently improving my problem-solving skills every day!*
+
 
 ## 📬 Contact Info 
 
