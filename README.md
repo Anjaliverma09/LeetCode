@@ -4,11 +4,7 @@ LeetCode efficient solutions using C++ language.
 
 ## 📊 LeetCode Progress Graph
 
-| Difficulty | Count  |
-| ---------- | ------ |
-| Easy 🍏    | **8**  |
-| Medium 🟡  | **20** |
-| Hard 🔴    | **4**  |
+🍏 Easy 8 • 🟡 Medium 20 • 🔴 Hard 4
 
 ## Contact Info
 
